@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Checklist - Nayla</title>
+
+    <!-- Menghubungkan file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <p id="tanggal"></p>
+            <h1>Today's Activities</h1>
+            <p class="subtitle">Catat tugasmu dan selesaikan satu per satu!</p>
+        </div>
+
+        <!-- Statistik -->
+        <div class="statistik">
+
+            <div class="stat-box">
+                <span id="total-tugas">0</span>
+                <p>Total Tugas</p>
+            </div>
+
+            <div class="stat-box">
+                <span id="tugas-selesai">0</span>
+                <p>Selesai</p>
+            </div>
+
+            <div class="stat-box">
+                <span id="tugas-belum">0</span>
+                <p>Belum Selesai</p>
+            </div>
+
+        </div>
+
+        <!-- Input tugas -->
+        <div class="input-area">
+
+            <input
+                type="text"
+                id="input-tugas"
+                placeholder="Mau ngapain aja hari ini?"
+            >
+
+            <button id="btn-tambah">Tambah</button>
+
+        </div>
+
+        <!-- Pesan jika input kosong -->
+        <p id="pesan-peringatan"></p>
+
+        <!-- Daftar tugas -->
+        <ul id="daftar-tugas"></ul>
+
+        <!-- Pesan ketika belum ada tugas -->
+        <p id="pesan-kosong">Nayla Sucia Rahmawati</p>
+
+    </div>
+
+    <!-- Menghubungkan file JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
